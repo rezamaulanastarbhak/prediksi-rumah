@@ -74,8 +74,9 @@ else:
           # format rupiah
           original_price = format_currency(original_price, "IDR", locale='id_ID',)
           
-          st.success(st.metric(label = 'Prediksi Harga',
-                    value = original_price) )
+          st.success('Prediksi berhasil')
+          st.metric(label = 'Prediksi Harga',
+                    value = original_price)
           
         except:
           st.error("Gagal load data")
